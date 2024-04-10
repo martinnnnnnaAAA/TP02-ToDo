@@ -1,0 +1,86 @@
+@keyframes colorChange {
+    0% {
+      color: violet;
+    }
+    50% {
+      color: darkviolet;
+    }
+    100% {
+      color: violet;
+    }
+  }
+  
+  
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("fondo.jpeg");
+    background-size: cover;
+}
+
+.container {
+    border-radius: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 15%;
+    padding: 20px;
+    background-color: #572364 ;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+h1{
+    font-size: 60px;
+}
+h1, h2 {
+    animation: colorChange 3s infinite;
+    text-align: center;
+    color: #e2cee5;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #c59fcb;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #a770b2;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tachado {
+    text-decoration: line-through;
+    color: #888;
+}
